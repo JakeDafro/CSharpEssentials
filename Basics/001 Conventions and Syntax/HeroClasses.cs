@@ -6,23 +6,30 @@ public class Program
 {
 	public Hero heroOne;
 	public Hero heroTwo;
-	
+	public Hero heroThree;
 	public void Main()
 	{
 		heroOne = new Hero();
 		heroTwo = new Hero();
-		
+		heroThree = new Hero();
+
 		heroOne.health = 2;
 		heroOne.powerLevel = 5;
 		
 		heroTwo.health = 3;
 		heroTwo.powerLevel = 1;
-		
+
+		heroThree.health = 4;
+		heroThree.powerLevel = 8;
+
 		Console.WriteLine(heroOne.health);
 		Console.WriteLine(heroOne.powerLevel);
 		
 		Console.WriteLine(heroTwo.health);
 		Console.WriteLine(heroTwo.powerLevel);
+
+		Console.WriteLine(heroThree.health);
+		Console.WriteLine(heroThree.powerLevel);
 	}
 }
 
