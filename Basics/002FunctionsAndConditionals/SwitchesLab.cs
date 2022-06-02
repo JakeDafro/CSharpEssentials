@@ -1,38 +1,41 @@
 using System;
-					
-public class Program
-{
-	public GameStates gameStates;
-	
-	public void Main()
-	{
-		gameStates = new GameStates();
-		gameStates.currentState = GameStates.States.Ending;
-		gameStates.CheckState();
-	}
-}
 
-public class GameStates {
-	
-	public enum States {
-		Starting,
-		Playing,
-		Ending
-	}
-	
-	public States currentState = States.Starting;
-	
-	public void CheckState () {
-		switch (currentState) {
-			case States.Starting:
-				Console.WriteLine("Starting");
-				break;
-			case States.Playing:
-				Console.WriteLine("Playing");
-				break;
-			case States.Ending:
-				Console.WriteLine("Ending");
-				break;
-		}
-	}
+namespace MyApplication
+{
+  class Program
+  {
+
+  
+    static void Main(string[] args)
+    
+    {
+      if (1 > 2) 
+      {
+        Console.WriteLine("The first man is stronger than the second.");
+      } 
+      else if (2 > 3)
+      {
+      Console.WriteLine("The second man is stronger than the first and the third.");
+      }
+      else
+      {
+      Console.WriteLine("The third man is the strongest.");
+      }
+      
+        int talk = 3;
+      switch (talk) 
+      {
+        case 1:
+          Console.WriteLine("O'Brian");
+          break;
+        case 2:
+          Console.WriteLine("Kimmel");
+          break;
+        case 3:
+          Console.WriteLine("Fallon");
+          break;
+        
+      }    
+    }
+  }
 }
